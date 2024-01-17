@@ -1,0 +1,24 @@
+name: jej1-workflow
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+ trabajo1:
+  runs-on: ubuntu-latest
+  steps:
+   - name: descargar codigo
+     uses: actions/checkout@v4
+
+   - name: configurar entorno
+     uses: actions/setup-node@v4
+     with:
+      node-version: 18
+
+   - run: npm i
+   - run: npm test
+
+   
+ 
