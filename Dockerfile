@@ -7,4 +7,4 @@ WORKDIR /app
 # Copiar los ficheros de código Python al directorio /code
 COPY . /app
 
-RUN npm install
+CMD npm install
