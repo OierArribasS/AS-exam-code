@@ -24,7 +24,7 @@ jobs:
      uses: cloudposse/github-action-docker-compose-test-run@main
      with:
       file: docker-compose.yml
-      service: npm
+      service: app
 
 
    
